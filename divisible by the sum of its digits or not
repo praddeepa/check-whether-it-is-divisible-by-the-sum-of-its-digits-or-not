@@ -1,0 +1,9 @@
+class Solution:
+    def isDivisible(self,N):
+        copy = N
+        rev = 0
+        while N != 0:
+            rev += N % 10
+            N = N // 10
+
+        return 1 if copy % rev == 0 else 0
